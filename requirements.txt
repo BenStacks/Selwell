@@ -1,0 +1,10 @@
+Django>=5.0,<5.1
+django-cors-headers
+django-ninja
+django-ninja-jwt[crypto]
+dj-database-url
+psycopg[binary] # psycopg
+pydantic[email]
+python-decouple
+pyjwt
+rav
