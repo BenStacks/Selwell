@@ -28,14 +28,15 @@ SECRET_KEY = config("DJANGO_SECRET_KEY", cast=str)
 DEBUG = config("DJANGO_DEBUG", cast=bool, default=False)
 
 ALLOWED_HOSTS = [
-    ".railway.app"
+    "https://selwell.onrender.com"
 ]
 if DEBUG:
     ALLOWED_HOSTS = ["*"]
 
 CSRF_TRUSTED_ORIGINS = [
-    "http://localhost:3000"
-    "http://127.0.0.1:3000"
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "https://selwel.vercel.app/"
 ]
 
 
